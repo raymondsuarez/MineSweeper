@@ -1,8 +1,6 @@
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-import javax.swing.Timer;
-
 import java.text.*;
 import java.util.*;
 
@@ -17,7 +15,6 @@ public class BoardWindow
 	private JLabel label1 = new JLabel("", JLabel.CENTER);
 	private JLabel label2 = new JLabel("", JLabel.CENTER);
 	private SimpleDateFormat formatter = new SimpleDateFormat("mm:ss");
-	private SimpleDateFormat formatter2 = new SimpleDateFormat("ssss");
 	private int flagcount = 10;
 	private String time;
 	private String flagcountstr = String.format("%04d", 10); 
@@ -43,7 +40,6 @@ public class BoardWindow
 		label1.setBackground(Color.BLACK);
 		label1.setForeground(Color.RED);
 		label1.setFont(new Font("sans-serif", Font.PLAIN, 30));
-//		flagcount = formatter2.format( 0010 );
 		label1.setFont(new Font("sans-serif", Font.PLAIN, 30));
 		label1.setText(flagcountstr);
 		
