@@ -19,16 +19,17 @@ public class BoardWindow
 	private String time;
 	private String flagcountstr = String.format("%04d", 10); 
 
-
+		
 	public void prepareGUI(ActionListener btnListener, MouseListener mouseListener)
 	{
-
-		ImageIcon javaIcon;
-
-		javaIcon = new ImageIcon(getClass().getResource("/java.png"));
-
-		//Create Window and major panels
+		
+		//Pretty window
 		JFrame.setDefaultLookAndFeelDecorated(true);
+		
+		//Create Window and major panels
+		ImageIcon javaIcon1;
+		
+		
 		gameWindow = new JFrame("Mine Sweeper by Dad");
 		gameWindow.setSize(new Dimension(450,450));
 		gameWindow.setResizable(false);
@@ -43,7 +44,8 @@ public class BoardWindow
 		label1.setFont(new Font("sans-serif", Font.PLAIN, 30));
 		label1.setText(flagcountstr);
 		
-		resetButton.setIcon(javaIcon);
+		javaIcon1 = new ImageIcon(getClass().getResource("/java.png"));
+		resetButton.setIcon(javaIcon1);
 		resetButton.setPreferredSize(new Dimension(40, 40));
 
 		label2.setOpaque(true);
