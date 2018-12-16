@@ -6,3 +6,5 @@ MineSweeper in Java
     3) Re-introduction to Java so that I can help my son with his HS class
     
     Adding a line for Eclipse. :octocat:
+
+    
